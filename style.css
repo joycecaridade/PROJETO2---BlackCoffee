@@ -1,6 +1,12 @@
 :root {
   --branco: #ffffff;
-  --preto:  #0B1D03;
+  --preto: #0b1d03;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,3 +21,123 @@ main {
   align-items: center;
 }
 
+.banner {
+  background-image: url(./assets/banner/banner-bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 1600px;
+  height: 900px;
+}
+
+header {
+  width: 1600px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.burguer-menu {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin: 32px 80px;
+}
+
+.burguer-menu-item {
+  width: 20px;
+  height: 2px;
+  background-color: var(--branco);
+}
+
+.banner-carrinho-btn {
+  margin: 32px 80px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-logo {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  color: var(--branco);
+}
+
+.banner-elements {
+  margin: 80px;
+  margin-top: 188px;
+}
+
+.banner-sliders {
+  width: 112px;
+  height: 4px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.banner-sliders-item__active {
+  width: 32px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.banner-sliders-item {
+  width: 32px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.banner-title h1 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 88px;
+  color: var(--branco);
+  width: 704px;
+  height: 264px;
+  margin-bottom: 24px;
+}
+
+.banner-title p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--branco);
+  margin-bottom: 120px;
+}
+
+.banner-arrows {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 104px;
+}
+
+.banner-arrows__left,
+.banner-arrows__right {
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--branco);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-arrows img {
+  width: 8px;
+  height: 16px;
+}
