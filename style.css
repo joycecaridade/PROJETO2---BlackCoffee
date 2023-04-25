@@ -1,6 +1,9 @@
 :root {
   --branco: #ffffff;
   --preto: #0b1d03;
+  --bege: #fffcf6;
+  --dourado: #a0996c;
+  --dourado-card-bg: #f7f1e6;
 }
 
 * {
@@ -12,6 +15,7 @@
 body {
   margin: 0;
   color: var(--preto);
+  background: var(--bege);
 }
 
 main {
@@ -140,4 +144,123 @@ header {
 .banner-arrows img {
   width: 8px;
   height: 16px;
+}
+
+/* fim da banner */
+
+.highlights {
+  width: 1600px;
+  height: 1264px;
+  padding-top: 118px;
+  display: flex;
+  flex-direction: column;
+  gap: 144px;
+  margin-bottom: 184px;
+}
+
+.highlights__item {
+  margin: 0 80px;
+  display: flex;
+  gap: 155px;
+}
+
+.highlights__item h2 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  color: var(--preto);
+  margin-bottom: 32px;
+}
+
+.highlights__item p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--preto);
+}
+
+.highlights__item img {
+  width: 704px;
+  height: 560px;
+}
+
+/* fim highlights */
+
+.varieties {
+  width: 1600px;
+  height: 1276px;
+}
+
+.variety-cards {
+  margin: 0 80px;
+}
+
+.variety-cards-top {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.variety-cards-bottom {
+  display: flex;
+  gap: 32px;
+}
+
+.variety-cards h2 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  color: var(--dourado);
+  margin-bottom: 64px;
+}
+
+.variety-cards__item {
+  width: 459px;
+  height: 560px;
+  padding: 40px;
+  background-color: var(--dourado-card-bg);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.variety-cards__item img {
+  width: 172px;
+  height: 216px;
+  margin-bottom: 32px;
+}
+
+.variety-cards__item h5 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 48px;
+}
+
+.variety-cards__item p strong {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.variety-cards__item p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 52px;
 }
