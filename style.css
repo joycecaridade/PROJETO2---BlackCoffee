@@ -1,21 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+
 :root {
   --branco: #ffffff;
   --preto: #0b1d03;
-  --bege: #fffcf6;
+  --bege-claro: #fffcf6;
   --dourado: #a0996c;
-  --dourado-card-bg: #f7f1e6;
+  --cinza: #969696;
+  --bege-claro-card-bg: #f7f1e6;
+  --preto-escuro: #1f1f1f;
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
   color: var(--preto);
-  background: var(--bege);
+  background-color: var(--bege-claro);
 }
 
 main {
@@ -26,16 +29,24 @@ main {
 }
 
 .banner {
-  background-image: url(./assets/banner/banner-bg.png);
-  background-position: top;
-  background-repeat: no-repeat;
   width: 1600px;
   height: 900px;
+  background: linear-gradient(
+      0deg,
+      rgba(31, 31, 31, 0.5),
+      rgba(31, 31, 31, 0.5)
+    ),
+    url(./assets/banner/banner-bg.png);
+  background-position: top;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 header {
-  width: 1600px;
-  height: 92px;
+  padding: 32px 80px;
+}
+
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,223 +55,351 @@ header {
 .burguer-menu {
   width: 28px;
   height: 28px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  margin: 32px 80px;
-}
-
-.burguer-menu-item {
-  width: 20px;
-  height: 2px;
-  background-color: var(--branco);
-}
-
-.banner-carrinho-btn {
-  margin: 32px 80px;
+  border: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background: none;
+  cursor: pointer;
 }
 
-.banner-logo {
-  font-family: "Playfair Display";
-  font-style: normal;
+.header-shopping-cart {
+  height: 28px;
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.header-logo {
+  font-family: "Playfair Display", sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 28px;
-  color: var(--branco);
+  color: var(--bege-claro);
 }
 
 .banner-elements {
-  margin: 80px;
-  margin-top: 188px;
+  height: 548px;
+  padding: 0 80px 0 80px;
+  margin-top: 100px;
 }
 
 .banner-sliders {
-  width: 112px;
-  height: 4px;
-  margin-bottom: 40px;
   display: flex;
-  flex-direction: row;
+  padding: 0 0 40px;
   gap: 8px;
-}
-
-.banner-sliders-item__active {
-  width: 32px;
-  height: 4px;
-  background: #ffffff;
-  border-radius: 10px;
 }
 
 .banner-sliders-item {
   width: 32px;
   height: 4px;
-  background: #ffffff;
-  border-radius: 10px;
+  background: var(--branco);
   opacity: 0.5;
+  border-radius: 10px;
+}
+
+.active {
+  opacity: 1;
+}
+
+.banner-title {
+  width: 704px;
+  height: 328px;
+  margin-bottom: 120px;
 }
 
 .banner-title h1 {
-  font-family: "Playfair Display";
-  font-style: normal;
+  font-family: "Playfair Display", sans-serif;
   font-weight: 700;
   font-size: 80px;
   line-height: 88px;
   color: var(--branco);
-  width: 704px;
-  height: 264px;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .banner-title p {
-  font-family: "Open Sans";
-  font-style: normal;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 32px;
   line-height: 40px;
   color: var(--branco);
-  margin-bottom: 120px;
 }
 
 .banner-arrows {
+  width: 76px;
+  height: 56px;
   display: flex;
-  flex-direction: row;
   gap: 20px;
-  margin-bottom: 104px;
 }
 
-.banner-arrows__left,
-.banner-arrows__right {
+.banner-arrows button {
   width: 56px;
   height: 56px;
+  background: none;
   border: 1px solid var(--branco);
-  border-radius: 100%;
+  border-radius: 50%;
+  padding: 24px;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .banner-arrows img {
-  width: 8px;
   height: 16px;
+  width: 8px;
 }
-
-/* fim da banner */
 
 .highlights {
   width: 1600px;
-  height: 1264px;
-  padding-top: 118px;
   display: flex;
   flex-direction: column;
-  gap: 144px;
-  margin-bottom: 184px;
+  margin-bottom: 144px;
 }
 
-.highlights__item {
-  margin: 0 80px;
+.highlights-card {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 560px;
   gap: 155px;
+  padding: 118px 80px 0;
 }
 
-.highlights__item h2 {
-  font-family: "Playfair Display";
-  font-style: normal;
+.highlights-card-title {
+  width: 581px;
+}
+
+.highlights-card h2 {
+  font-family: "Playfair Display", sans-serif;
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
   color: var(--preto);
-  margin-bottom: 32px;
 }
 
-.highlights__item p {
-  font-family: "Open Sans";
-  font-style: normal;
+.highlights-card p {
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 32px;
   line-height: 40px;
-  color: var(--preto);
 }
-
-.highlights__item img {
-  width: 704px;
-  height: 560px;
-}
-
-/* fim highlights */
 
 .varieties {
   width: 1600px;
   height: 1276px;
 }
 
-.variety-cards {
-  margin: 0 80px;
-}
-
-.variety-cards-top {
-  display: flex;
-  gap: 32px;
-  margin-bottom: 32px;
-}
-
-.variety-cards-bottom {
-  display: flex;
-  gap: 32px;
-}
-
-.variety-cards h2 {
-  font-family: "Playfair Display";
-  font-style: normal;
+.varieties h2 {
+  font-family: "Playfair Display", sans-serif;
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
   color: var(--dourado);
   margin-bottom: 64px;
+  padding: 0 80px;
 }
 
-.variety-cards__item {
+.variety-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0 80px;
+}
+
+.variety-cards-top-row,
+.variety-cards-bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.variety-cards-box {
+  background: var(--bege-claro-card-bg);
   width: 459px;
   height: 560px;
-  padding: 40px;
-  background-color: var(--dourado-card-bg);
   border-radius: 8px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 32px;
 }
 
-.variety-cards__item img {
-  width: 172px;
-  height: 216px;
-  margin-bottom: 32px;
-}
-
-.variety-cards__item h5 {
-  font-family: "Open Sans";
-  font-style: normal;
+.varieties h5 {
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
-  margin-bottom: 48px;
+  letter-spacing: 1px;
+  color: var(--preto);
 }
 
-.variety-cards__item p strong {
-  font-family: "Open Sans";
-  font-style: normal;
+.varieties p strong {
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-size: 32px;
   line-height: 40px;
+  color: var(--preto);
 }
 
-.variety-cards__item p {
-  font-family: "Open Sans";
-  font-style: normal;
+.variety-cards p {
+  color: var(--cinza);
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
+  color: var(--preto);
+  width: 164px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
-  margin-bottom: 52px;
+}
+
+.variety-cards img {
+  width: 172px;
+  height: 216px;
+}
+
+.variety-cards button {
+  width: 395px;
+  height: 76px;
+  border-radius: 4px;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--branco);
+  background-color: var(--preto);
+  cursor: pointer;
+}
+
+.mid-section {
+  width: 1600px;
+}
+
+.benefits-top-row {
+  display: flex;
+  padding: 80px;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.benefits-card {
+  width: 262px;
+  height: 120px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits-card p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.benefits-card img {
+  height: 40px;
+  width: 66px;
+  margin-bottom: 24px;
+}
+
+.benefits-bottom-row {
+  padding: 0 80px 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.benefits-catalog {
+  width: 704px;
+  height: 560px;
+  background-image: url(./assets/coffee/highlights-3.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.benefits-catalog-title {
+  width: 451px;
+  height: 132px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 348px;
+}
+
+.benefits-catalog h2 {
+  color: var(--branco);
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+}
+
+.benefits-catalog p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--branco);
+}
+
+.benefits-accessories {
+  width: 704px;
+  height: 560px;
+  background-image: url(./assets/coffee/highlights-4.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.benefits-accessories-title {
+  width: 451px;
+  height: 132px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 348px;
+}
+
+.benefits-accessories h2 {
+  color: var(--branco);
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+}
+
+.benefits-accessories p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--branco);
+}
+
+.find-store {
+  width: 1600px;
+  height: 800px;
+  background-color: pink;
+}
+
+.find-store-search {
 }
