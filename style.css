@@ -34,7 +34,7 @@ main {
 }
 
 .banner {
-  width: 1600px;
+  width: 100%;
   min-height: 900px;
   background: linear-gradient(
       0deg,
@@ -46,12 +46,11 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
+  padding: 32px 80px;
 }
 
 header {
   margin: 0 auto;
-  max-width: 1600px;
-  padding: 32px 80px;
   margin-bottom: 156px;
 }
 
@@ -84,8 +83,7 @@ nav button {
 
 .banner-elements {
   margin: 0 auto;
-  max-width: 1600px;
-  padding: 0 80px;
+  width: 1600px;
 }
 
 .banner-sliders {
@@ -166,7 +164,7 @@ nav button {
 /*  */
 
 .highlights {
-  max-width: 1600px;
+  width: 1600px;
   height: 560px;
   padding: 118px 80px;
   height: 1264px;
@@ -211,7 +209,7 @@ nav button {
 /*  */
 
 .varieties {
-  max-width: 1600px;
+  width: 1600px;
   height: 1276px;
   display: flex;
   flex-direction: column;
@@ -306,7 +304,7 @@ nav button {
 /*  */
 
 .mid-section {
-  max-width: 1600px;
+  width: 1600px;
   height: 904px;
   padding: 80px 80px 0;
 }
@@ -517,25 +515,16 @@ nav button {
 /*  */
 
 footer {
-  background-color: var(--bege-claro);
-  width: 100%;
-}
-
-.footer {
   width: 1600px;
-  height: 306px;
-  padding: 80px 56px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  height: 374px;
   margin: 0 auto;
 }
 
-.footer-logo h3 {
-  font-family: "Playfair Display", sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 28px;
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 56px 80px;
 }
 
 .footer-logo,
@@ -546,7 +535,14 @@ footer {
   height: 194px;
 }
 
-.intitutional h6 {
+.footer-logo h3 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+}
+
+.footer-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -555,50 +551,18 @@ footer {
   margin-bottom: 18px;
 }
 
-.intitutional ul {
+.footer-links-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.intitutional li a {
+.footer-links-list a {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
   color: var(--preto-escuro);
-}
-
-.products h6 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 28px;
-  color: var(--preto-escuro);
-  margin-bottom: 18px;
-}
-
-.products ul {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.products li a {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 28px;
-  color: var(--preto-escuro);
-}
-
-.social-media h6 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 28px;
-  color: var(--preto-escuro);
-  margin-bottom: 18px;
 }
 
 .social-media ul {
@@ -607,13 +571,17 @@ footer {
   gap: 26px;
 }
 
+.social-media img {
+  width: 40px;
+  height: 40px;
+}
+
 .mentorama {
   width: 1600px;
   height: 68px;
-  margin: 0 auto;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .mentorama p {
@@ -621,10 +589,10 @@ footer {
   font-weight: 800;
   font-size: 20px;
   line-height: 28px;
-  color: var(--preto);
 }
 
 .mentorama img {
-  height: 19px;
-  width: 159px;
+  width: 167.8px;
+  height: 19.24px;
+  margin-left: 16px;
 }
