@@ -520,17 +520,18 @@ nav button {
 
 footer {
   width: 1600px;
-  height: 374px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  background-color: blue;
 }
 
 .footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 56px 80px;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .footer-logo,
@@ -584,10 +585,11 @@ footer {
 
 .mentorama {
   width: 1600px;
-  height: 68px;
+  padding: 24px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: pink;
 }
 
 .mentorama p {
