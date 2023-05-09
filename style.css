@@ -23,7 +23,6 @@ body {
   height: 100vh;
   color: var(--preto);
   background-color: var(--bege-claro);
-  background-color: var(--bege-claro);
 }
 
 main {
@@ -45,7 +44,7 @@ main {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 32px 80px;
+  padding: 32px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,7 +166,7 @@ nav button {
 .highlights {
   width: 1600px;
   height: 560px;
-  padding: 118px 0;
+  padding-top: 118px;
   height: 1264px;
   display: flex;
   flex-direction: column;
@@ -215,7 +214,6 @@ nav button {
   display: flex;
   flex-direction: column;
   gap: 64px;
-  /* padding: 0 80px; */
 }
 
 .varieties h2 {
@@ -435,7 +433,6 @@ nav button {
 .find-store {
   width: 100%;
   height: 800px;
-  padding: 0 80px;
   background: var(--branco);
   display: flex;
   flex-direction: column;
