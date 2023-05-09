@@ -34,8 +34,8 @@ main {
 }
 
 .banner {
-  width: 1600px;
-  min-height: 900px;
+  width: 100%;
+  height: 900px;
   background: linear-gradient(
       0deg,
       rgba(31, 31, 31, 0.5),
@@ -46,10 +46,13 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 32px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
-  margin: 0 auto;
+  width: 1600px;
   margin-bottom: 156px;
 }
 
@@ -81,7 +84,6 @@ nav button {
 /*  */
 
 .banner-elements {
-  margin: 0 auto;
   width: 1600px;
 }
 
@@ -165,7 +167,7 @@ nav button {
 .highlights {
   width: 1600px;
   height: 560px;
-  padding: 118px 80px;
+  padding: 118px 0;
   height: 1264px;
   display: flex;
   flex-direction: column;
@@ -305,7 +307,6 @@ nav button {
 .mid-section {
   width: 1600px;
   height: 904px;
-  /* padding: 80px 80px 0; */
 }
 
 .benefits {
@@ -356,7 +357,6 @@ nav button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: pink;
 }
 
 .catalog {
@@ -433,7 +433,7 @@ nav button {
 /*  */
 
 .find-store {
-  width: 1440px;
+  width: 1600px;
   height: 800px;
   padding: 0 80px;
   background: var(--branco);
@@ -453,7 +453,7 @@ nav button {
 }
 
 .find-store-map {
-  width: 1440px;
+  width: 1600px;
   height: 512px;
   margin: 0 auto;
 }
@@ -508,6 +508,7 @@ nav button {
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
+  background: none;
 }
 
 .find-store__address img {
@@ -520,6 +521,8 @@ nav button {
 footer {
   width: 1600px;
   height: 374px;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
 }
 
