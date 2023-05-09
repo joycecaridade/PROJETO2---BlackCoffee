@@ -523,7 +523,6 @@ footer {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  background-color: blue;
 }
 
 .footer {
@@ -589,7 +588,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: pink;
 }
 
 .mentorama p {
