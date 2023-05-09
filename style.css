@@ -433,7 +433,7 @@ nav button {
 /*  */
 
 .find-store {
-  width: 1600px;
+  width: 100%;
   height: 800px;
   padding: 0 80px;
   background: var(--branco);
@@ -444,12 +444,14 @@ nav button {
 }
 
 .find-store h2 {
+  width: 1600px;
   font-family: "Playfair Display", sans-serif;
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
   color: var(--preto);
   margin-bottom: 46px;
+  margin: 0 auto;
 }
 
 .find-store-map {
@@ -459,16 +461,20 @@ nav button {
 }
 
 .find-store-search {
+  width: 1600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 32px;
   margin-bottom: 24px;
+  margin: 0 auto;
+  margin-top: 48px;
+  margin-bottom: 24px;
 }
 
 .find-store__city {
   outline: none;
-  width: 30%;
+  width: 40%;
   height: 76px;
   display: flex;
   border: 2px solid var(--preto);
@@ -531,14 +537,6 @@ footer {
   justify-content: space-between;
   padding-top: 56px;
   padding-bottom: 56px;
-}
-
-.footer-logo,
-.intitutional,
-.social-media,
-.products {
-  width: 336px;
-  height: 194px;
 }
 
 .footer-logo h3 {
